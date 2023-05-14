@@ -1,0 +1,249 @@
+@import url(font.css); /* importo il file css con le istruzioni per richiamare il file del carattere tipografico */
+
+body {
+    margin: 0 0;
+    background-color: #fff;
+    font-family: "Inter", "Josefin slab", "Accademia", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+main, footer {
+    max-width: 1200px;
+    margin: auto; /* centro l'elemento nella pagina */
+    padding: 0px;
+    place-content: space-between;
+}
+
+
+header a {
+    text-decoration: none;
+    color: #222;
+}
+
+header a:hover {
+    color: crimson;
+    text-decoration: none;
+}
+
+header a.attivo {
+    font-weight: bold;
+}
+
+/*header - posizione logo e navbar*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 2px 10px 10px rgb(0 0 0 / 10%);
+    width: -webkit-fill-available;
+    background-color: #fff;
+    z-index: 1;
+}
+
+
+header p {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 0;
+}
+
+footer p {
+    border-top:1px solid rgba(0,0,0,0.1);
+    margin: 0;
+    padding: 20px 0;
+    font-size:  14px;
+    color:#444
+}
+
+
+
+
+@media (max-width: 600px) { /* se la finestra ha una larghezza minore di 800px, fai lo sfondo giallo */
+    body { 
+        background: rgb(255, 255, 255);
+    }
+    
+    .card-2 {
+        flex-direction: column; /* nella versione mobile la card con gli elementi allineati in orizzontale diventa come la prima card, con gli elementi uno sotto l'altro */
+    }
+
+    .card-2 .testo {
+        width: 100%;
+    }
+
+    .card-2 .immagine {
+        width: 100%;
+    }
+
+    section.hero h1{
+        font-size: 70px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card_1, .card_2, .card_3, .card_4 {
+        display: inline;
+        }
+}
+
+@media (max-width: 400px) { /* se la finestra ha una larghezza minore di 400px, fai lo sfondo verde. Questa istruzione sovrascrive la precedente, se la cancello lo sfondo sarà sempre giallo */
+    body {
+        background: rgb(255, 255, 255);
+    }
+
+    section.hero h1{
+        font-size: 30px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card_1, .card_2, .card_3, .card_4 {
+        display: inline;
+        }
+}
+
+
+
+
+  
+
+
+  /* Stile per il contenitore della sezione hero */
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px; /* Larghezza massima del contenitore */
+    margin: 0 auto; /* Centrare il contenitore orizzontalmente */
+    height: 100%;
+    gap: 10%;
+    padding: 10%;
+  }
+
+
+
+  .form_container {
+    /*Contenitore di form dei contatti con testo affiancato al form*/
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    /* min-height: 400px; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    /* height: max-content; */
+  }
+  
+  form {
+    margin: auto;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    width: -webkit-fill-available;
+    font-family: 'Josefin sans';
+    font-weight: 600;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  button[type="submit"] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: -webkit-fill-available;
+    font-family: 'Inter';
+  }
+  
+  button[type="submit"]:hover {
+    background-color: crimson;
+  }
+
+
+
+p {
+    font-family: 'Josefin sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4em;
+    color: #3E3E3E;
+}
+
+
+
+
+
+h1{ 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+}
+
+
+
+
+
+
+
+h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../font/Inter-VariableFont_slnt\,wght.woff);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "Josefin sans";
+    src: url(../font/JosefinSans-VariableFont_wght.woff);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Josefin sans";
+    src: url(../font/JosefinSans-Italic-VariableFont_wght.woff);
+    font-weight: normal;
+    font-style: italic;
+}
